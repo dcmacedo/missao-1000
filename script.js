@@ -1,5 +1,5 @@
 // ======= CONFIG (edite aqui) =======
-const SOLD_NUMBERS = 362;
+const SOLD_NUMBERS = 363;
 const TOTAL_NUMBERS = 1000;
 const CTA_LINK = "https://rifa.digital/s/pOFDjjBJABy";
 
@@ -111,4 +111,5 @@ togglePrayerBtn.addEventListener("click", () => {
 
 updateProgress();
 updateCountdown();
+
 setInterval(updateCountdown, 1000);
