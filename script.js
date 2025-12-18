@@ -1,5 +1,5 @@
 // ======= CONFIG (edite aqui) =======
-const SOLD_NUMBERS = 363;
+const SOLD_NUMBERS = 403;
 const TOTAL_NUMBERS = 1000;
 const CTA_LINK = "https://rifa.digital/s/pOFDjjBJABy";
 
