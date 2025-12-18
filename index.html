@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <title>Missão 1000</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="hero">
+            <span class="pill">🕊️ Rifa em prol do 9º EJC • Prazo de venda: <b id="deadlineLabel">10/01/2026</b></span>
+            <h1>MISSÃO 1000 <span style="color:var(--accent)">“AGE E DEUS AGIRÁ!”</span></h1>
+            <p class="sub">
+                Um gesto simples. Um impacto gigante.<br>
+                Comprar um número é dizer: <b>“eu apoio essa missão”</b>.
+            </p>
+            <div class="quote">“Age e Deus agirá!” Santa Joana d’Arc</div>
+
+            <div class="row">
+                <a class="cta" href="https://rifa.digital/s/pOFDjjBJABy" target="_blank" rel="noopener">EU VOU AGIR
+                    AGORA</a>
+                <button class="cta secondary" id="shareBtn">Compartilhar</button>
+            </div>
+
+            <div class="kpis">
+                <div class="kpi"><b>Prêmio</b><span class="muted">R$ 500,00</span></div>
+                <div class="kpi"><b>Valor por número</b><span class="muted">R$ 10,00</span></div>
+                <div class="kpi"><b>Meta</b><span class="muted">1000 números</span></div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card span7">
+                <h2>📊 Progresso da Missão</h2>
+                <div class="row" style="justify-content:space-between">
+                    <span class="badge" id="soldLabel">Vendidos: 362/1000</span>
+                    <span class="badge" id="remainingLabel">Faltam: 638</span>
+                </div>
+
+                <div class="progressWrap">
+                    <div class="bar">
+                        <div id="barFill"></div>
+                    </div>
+                    <p class="muted" style="margin:10px 0 0">
+                        Cada número vendido é <b>1 passo</b>. <br>
+                        A missão avança quando a gente decide agir.
+                    </p>
+                </div>
+
+                <div class="milestones">
+                    <div class="ms" id="ms400"><strong>🏁 400 vendidos</strong><span class="muted">Vídeo de
+                            agradecimento + intenção especial</span></div>
+                    <div class="ms" id="ms600"><strong>🏁 600 vendidos</strong><span class="muted">Bastidores da missão
+                            (vídeo curto)</span></div>
+                    <div class="ms" id="ms800"><strong>🏁 800 vendidos</strong><span class="muted">Testemunho + momento
+                            de oração</span></div>
+                    <div class="ms" id="ms1000"><strong>🏁 1000 vendidos</strong><span class="muted">Missão concluída +
+                            sorteio 🎉</span></div>
+                </div>
+            </div>
+
+            <div class="card span5">
+                <h2>⏳ Contagem regressiva (prazo de venda)</h2>
+                <p class="muted" style="margin-top:0">
+                    A venda encerra em <b>10/01/2026</b>.<br>
+                    Depois disso, é só acompanhar o sorteio em <b>31/01/2026</b>.
+                </p>
+                <div class="timer" aria-live="polite">
+                    <div class="tbox"><b id="d">—</b><span class="muted">dias</span></div>
+                    <div class="tbox"><b id="h">—</b><span class="muted">horas</span></div>
+                    <div class="tbox"><b id="m">—</b><span class="muted">min</span></div>
+                    <div class="tbox"><b id="s">—</b><span class="muted">seg</span></div>
+                </div>
+                <div
+                    style="margin-top:12px;padding:12px;border:1px solid var(--line);border-radius:14px;background:rgba(11,15,20,.45)">
+                    <b>🎯 Desafio da semana</b>
+                    <p class="muted" style="margin:6px 0 0" id="weeklyChallenge">
+                        Bater <b>50 números até domingo</b>. Se bater, destrava sorteio simbólico extra entre os
+                        compradores da semana.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>✅ Como participar</h2>
+                <ol class="list">
+                    <li>Clique em <b>“EU VOU AGIR AGORA”</b> ou <b>“QUERO MEU NÚMERO”</b> e escolha seu(s) número(s).
+                    </li>
+                    <li>Faça o pagamento com segurança.</li>
+                    <li>Pronto: você já está na missão 🙏</li>
+                </ol>
+                <div class="footerCta">
+                    <a class="cta" href="https://rifa.digital/s/pOFDjjBJABy" target="_blank" rel="noopener">QUERO MEU
+                        NÚMERO</a>
+                </div>
+            </div>
+
+            <div class="card" id="oracao">
+                <h2>🙏 Oração da Missão 1000</h2>
+
+                <button class="cta secondary" id="togglePrayerBtn">
+                    Ler oração
+                </button>
+
+                <div id="prayerContent" class="prayer hidden">
+                    <p>
+                        Santa Joana d’Arc, padroeira da nossa missão,
+                        ensina-nos a coragem que não faz barulho, mas muda realidades.
+                        Dá-nos um coração firme, humilde e disponível para agir no bem.
+                    </p>
+
+                    <p>
+                        Senhor Deus, abençoa esta rifa e tudo o que ela sustenta.
+                        Que cada número vendido seja um passo de amor,
+                        um gesto de unidade, um sinal de esperança.
+                    </p>
+
+                    <p>
+                        Afasta de nós o desânimo e a indiferença.
+                        Multiplica as mãos que ajudam, as vozes que divulgam,
+                        e a generosidade de quem participa.
+                    </p>
+
+                    <p class="muted">
+                        Nós escolhemos agir e confiamos que Tu agirás conosco. Amém.<br>
+                        Santa Joana d’Arc, rogai por nós.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>🧾 Transparência</h2>
+                <ul class="list">
+                    <li>Prazo de venda: <b>até 10/01/2026</b></li>
+                    <li>Sorteio: <b>31/01/2026</b></li>
+                    <li>Prêmio: <b>R$ 500,00</b></li>
+                    <li>Valor por número: <b>R$ 10,00</b></li>
+                </ul>
+                <p class="muted" style="margin-bottom:0">
+                    Se você estava esperando o “momento certo”… ele é agora.
+                    <b>Age. Deus agirá. E a missão avança com você.</b>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
